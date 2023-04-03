@@ -1,0 +1,33 @@
+POST http://localhost:5000/mywebservice
+Content-Type: text/xml, charset=utf-8
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:processPayment>
+         <paymentInfo>
+            <cardHolderName>Nguyen</cardHolderName>
+         </paymentInfo>
+      </ser:processPayment>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+###
+POST http://localhost:5000/mywebservice
+Content-Type: text/xml, charset=utf-8
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:sayHello>
+         <name>sdcsdc</name>
+      </ser:sayHello>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+###
+
+
